@@ -13,6 +13,15 @@ public class EndpointRouteFormatter
     return formattedEndpoint.ToString();
   }
 
+  public string FormatEndpointWithRouteVariablesConvertToDictionary(string endpointUrl, params (string Key, object Value)[] routeVariables)
+  {
+    var routeVariablesDictionary = routeVariables.ToDictionary(
+            routeVariable => routeVariable.Key,
+            routeVariable => routeVariable.Value.ToString() ?? throw new ArgumentException("Route parameter cannot be null"));
+
+    return FormatEndpointWithRouteVariables(endpointUrl, routeVariablesDictionary);
+  }
+
   public string FormatEndpointWithRouteVariables(string endpointUrl, (string Key, object Value) routeVariables1)
   {
     var formattedEndpoint = new StringBuilder(endpointUrl);

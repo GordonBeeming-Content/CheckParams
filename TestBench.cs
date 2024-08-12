@@ -34,6 +34,17 @@ public class MyBenchmark
   }
 
   [Benchmark]
+  public string SixRouteVarExtendedConvertToDictionary()
+  {
+    return _endpointRouteFormatter.FormatEndpointWithRouteVariablesConvertToDictionary(EndpointUrlWithSix, ("var1", "1"),
+            ("var2", "2"),
+            ("var3", "3"),
+            ("var4", "4"),
+            ("var5", "5"),
+            ("var6", "6"));
+  }
+
+  [Benchmark]
   public string FiveRouteVarExtended()
   {
     return _endpointRouteFormatter.FormatEndpointWithRouteVariables(EndpointUrlWithFive, ("var1", "1"),
@@ -112,6 +123,12 @@ public class MyBenchmark
   public string OneRouteVarParamsOnly()
   {
     return _endpointRouteFormatter.FormatEndpointWithRouteVariablesParamsOnly(EndpointUrlWithOne, ("var1", "1"));
+  }
+
+  [Benchmark]
+  public string OneRouteVarExtendedConvertToDictionary()
+  {
+    return _endpointRouteFormatter.FormatEndpointWithRouteVariablesConvertToDictionary(EndpointUrlWithSix, ("var1", "1"));
   }
 
 }

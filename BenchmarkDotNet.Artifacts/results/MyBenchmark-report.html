@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>MyBenchmark-20240812-155503</title>
+<title>MyBenchmark-20240812-201515</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -22,20 +22,22 @@ Apple M3 Max, 1 CPU, 14 logical and 14 physical cores
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>           Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Allocated</th>
+<thead><tr><th>                          Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>SixRouteVarExtended</td><td>315.77 ns</td><td>1.248 ns</td><td>1.043 ns</td><td>0.0792</td><td>664 B</td>
-</tr><tr><td>SixRouteVarParamsOnly</td><td>328.50 ns</td><td>4.948 ns</td><td>4.628 ns</td><td>0.0849</td><td>712 B</td>
-</tr><tr><td>FiveRouteVarExtended</td><td>255.78 ns</td><td>2.981 ns</td><td>2.642 ns</td><td>0.0687</td><td>576 B</td>
-</tr><tr><td>FiveRouteVarParamsOnly</td><td>270.57 ns</td><td>4.126 ns</td><td>3.859 ns</td><td>0.0744</td><td>624 B</td>
-</tr><tr><td>FourRouteVarExtended</td><td>189.87 ns</td><td>0.943 ns</td><td>0.836 ns</td><td>0.0572</td><td>480 B</td>
-</tr><tr><td>FourRouteVarParamsOnly</td><td>198.54 ns</td><td>0.790 ns</td><td>0.739 ns</td><td>0.0629</td><td>528 B</td>
-</tr><tr><td>ThreeRouteVarExtended</td><td>134.35 ns</td><td>0.655 ns</td><td>0.613 ns</td><td>0.0429</td><td>360 B</td>
-</tr><tr><td>ThreeRouteVarParamsOnly</td><td>140.59 ns</td><td>0.802 ns</td><td>0.750 ns</td><td>0.0515</td><td>432 B</td>
-</tr><tr><td>TwoRouteVarExtended</td><td>82.18 ns</td><td>0.243 ns</td><td>0.227 ns</td><td>0.0334</td><td>280 B</td>
-</tr><tr><td>TwoRouteVarParamsOnly</td><td>93.27 ns</td><td>1.204 ns</td><td>1.126 ns</td><td>0.0401</td><td>336 B</td>
-</tr><tr><td>OneRouteVarExtended</td><td>41.76 ns</td><td>0.198 ns</td><td>0.166 ns</td><td>0.0249</td><td>208 B</td>
-</tr><tr><td>OneRouteVarParamsOnly</td><td>41.98 ns</td><td>0.126 ns</td><td>0.118 ns</td><td>0.0296</td><td>248 B</td>
+</thead><tbody><tr><td>SixRouteVarExtended</td><td>325.65 ns</td><td>4.266 ns</td><td>3.990 ns</td><td>0.0792</td><td>664 B</td>
+</tr><tr><td>SixRouteVarParamsOnly</td><td>324.88 ns</td><td>1.258 ns</td><td>1.177 ns</td><td>0.0849</td><td>712 B</td>
+</tr><tr><td>SixRouteVarExtendedConvertToDictionary</td><td>426.02 ns</td><td>1.443 ns</td><td>1.350 ns</td><td>0.1240</td><td>1,040 B</td>
+</tr><tr><td>FiveRouteVarExtended</td><td>255.17 ns</td><td>1.266 ns</td><td>1.184 ns</td><td>0.0687</td><td>576 B</td>
+</tr><tr><td>FiveRouteVarParamsOnly</td><td>279.80 ns</td><td>3.051 ns</td><td>2.854 ns</td><td>0.0744</td><td>624 B</td>
+</tr><tr><td>FourRouteVarExtended</td><td>196.84 ns</td><td>2.099 ns</td><td>1.861 ns</td><td>0.0572</td><td>480 B</td>
+</tr><tr><td>FourRouteVarParamsOnly</td><td>211.78 ns</td><td>0.836 ns</td><td>0.782 ns</td><td>0.0629</td><td>528 B</td>
+</tr><tr><td>ThreeRouteVarExtended</td><td>140.76 ns</td><td>0.602 ns</td><td>0.534 ns</td><td>0.0429</td><td>360 B</td>
+</tr><tr><td>ThreeRouteVarParamsOnly</td><td>143.59 ns</td><td>1.107 ns</td><td>0.924 ns</td><td>0.0515</td><td>432 B</td>
+</tr><tr><td>TwoRouteVarExtended</td><td>87.75 ns</td><td>0.955 ns</td><td>0.894 ns</td><td>0.0334</td><td>280 B</td>
+</tr><tr><td>TwoRouteVarParamsOnly</td><td>91.67 ns</td><td>0.434 ns</td><td>0.406 ns</td><td>0.0401</td><td>336 B</td>
+</tr><tr><td>OneRouteVarExtended</td><td>42.76 ns</td><td>0.378 ns</td><td>0.335 ns</td><td>0.0249</td><td>208 B</td>
+</tr><tr><td>OneRouteVarParamsOnly</td><td>44.47 ns</td><td>0.319 ns</td><td>0.266 ns</td><td>0.0296</td><td>248 B</td>
+</tr><tr><td>OneRouteVarExtendedConvertToDictionary</td><td>122.69 ns</td><td>0.653 ns</td><td>0.611 ns</td><td>0.0842</td><td>704 B</td>
 </tr></tbody></table>
 </body>
 </html>
