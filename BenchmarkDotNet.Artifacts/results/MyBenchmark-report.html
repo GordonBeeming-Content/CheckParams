@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MyBenchmark-20240812-155503</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=macOS 15.1 (24B5009l) [Darwin 24.1.0]
+Apple M3 Max, 1 CPU, 14 logical and 14 physical cores
+.NET SDK=9.0.100-preview.6.24328.19
+  [Host]     : .NET 8.0.7 (8.0.724.31311), Arm64 RyuJIT
+  DefaultJob : .NET 8.0.7 (8.0.724.31311), Arm64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>           Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>SixRouteVarExtended</td><td>315.77 ns</td><td>1.248 ns</td><td>1.043 ns</td><td>0.0792</td><td>664 B</td>
+</tr><tr><td>SixRouteVarParamsOnly</td><td>328.50 ns</td><td>4.948 ns</td><td>4.628 ns</td><td>0.0849</td><td>712 B</td>
+</tr><tr><td>FiveRouteVarExtended</td><td>255.78 ns</td><td>2.981 ns</td><td>2.642 ns</td><td>0.0687</td><td>576 B</td>
+</tr><tr><td>FiveRouteVarParamsOnly</td><td>270.57 ns</td><td>4.126 ns</td><td>3.859 ns</td><td>0.0744</td><td>624 B</td>
+</tr><tr><td>FourRouteVarExtended</td><td>189.87 ns</td><td>0.943 ns</td><td>0.836 ns</td><td>0.0572</td><td>480 B</td>
+</tr><tr><td>FourRouteVarParamsOnly</td><td>198.54 ns</td><td>0.790 ns</td><td>0.739 ns</td><td>0.0629</td><td>528 B</td>
+</tr><tr><td>ThreeRouteVarExtended</td><td>134.35 ns</td><td>0.655 ns</td><td>0.613 ns</td><td>0.0429</td><td>360 B</td>
+</tr><tr><td>ThreeRouteVarParamsOnly</td><td>140.59 ns</td><td>0.802 ns</td><td>0.750 ns</td><td>0.0515</td><td>432 B</td>
+</tr><tr><td>TwoRouteVarExtended</td><td>82.18 ns</td><td>0.243 ns</td><td>0.227 ns</td><td>0.0334</td><td>280 B</td>
+</tr><tr><td>TwoRouteVarParamsOnly</td><td>93.27 ns</td><td>1.204 ns</td><td>1.126 ns</td><td>0.0401</td><td>336 B</td>
+</tr><tr><td>OneRouteVarExtended</td><td>41.76 ns</td><td>0.198 ns</td><td>0.166 ns</td><td>0.0249</td><td>208 B</td>
+</tr><tr><td>OneRouteVarParamsOnly</td><td>41.98 ns</td><td>0.126 ns</td><td>0.118 ns</td><td>0.0296</td><td>248 B</td>
+</tr></tbody></table>
+</body>
+</html>
